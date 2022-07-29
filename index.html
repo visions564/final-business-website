@@ -1,29 +1,98 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>housing for homeless</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+<title>home page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
 <body>
-  <div class="main-content">
-    <div class="box picture">
-      <img src='home page picture.jpeg' class="hero-picture">
-    </div>
-    <div class="box black_bg"> 
-      <p class="logo"> Housing For Homeless</p> 
-      <p class="mission"> giving the homeless a second chance</p>
+
+
+
+<header>
+  <h2>Housing for Homeless</h2>
+</header>
+
+<section>
+  <img src="house.jpeg" class="house" width="400px" height="299px">
+  <article>
+    <h1>our mission</h1>
+    <p>our mission is to help hmeless peopl improve their lifes and have a fresh start at what they couldve had before the messed up. we have seen how it can affect our community and we want to make a change to it now. no more waiting</p>
+  </article>
+</section>
+
+</body>
+</html>
+
       <ul>
   <li class="center"><a class ="navlink"href="index.html" >Home</a></li>
   <li class="center"><a class ="navlink" href="about.html">About</a></li>
-  <li class="center"><a class ="navlink" href="contact.html">Contact</a></li>
   <li class="center"><a class ="navlink" href="service.html">Service</a></li>
+<li class="center"><a class ="navlink" href="contact.html">Contact</a></li>
   </ul>
     </div>
-    <p> Hello World Gang </p>
   </div>
 </body>
 
